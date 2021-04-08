@@ -45,7 +45,7 @@ namespace Vehicles
             this.editToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.deleteToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripFilter = new System.Windows.Forms.ToolStripComboBox();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.itemsToolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripContainer.BottomToolStripPanel.SuspendLayout();
             this.toolStripContainer.ContentPanel.SuspendLayout();
@@ -53,7 +53,7 @@ namespace Vehicles
             this.toolStripContainer.SuspendLayout();
             this.menuStrip.SuspendLayout();
             this.toolStrip.SuspendLayout();
-            this.statusStrip1.SuspendLayout();
+            this.statusStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // toolStripContainer
@@ -61,12 +61,12 @@ namespace Vehicles
             // 
             // toolStripContainer.BottomToolStripPanel
             // 
-            this.toolStripContainer.BottomToolStripPanel.Controls.Add(this.statusStrip1);
+            this.toolStripContainer.BottomToolStripPanel.Controls.Add(this.statusStrip);
             // 
             // toolStripContainer.ContentPanel
             // 
             this.toolStripContainer.ContentPanel.Controls.Add(this.vehiclesListView);
-            this.toolStripContainer.ContentPanel.Size = new System.Drawing.Size(800, 428);
+            this.toolStripContainer.ContentPanel.Size = new System.Drawing.Size(800, 450);
             this.toolStripContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.toolStripContainer.Location = new System.Drawing.Point(0, 0);
             this.toolStripContainer.Name = "toolStripContainer";
@@ -90,7 +90,7 @@ namespace Vehicles
             this.vehiclesListView.HideSelection = false;
             this.vehiclesListView.Location = new System.Drawing.Point(0, 0);
             this.vehiclesListView.Name = "vehiclesListView";
-            this.vehiclesListView.Size = new System.Drawing.Size(800, 428);
+            this.vehiclesListView.Size = new System.Drawing.Size(800, 450);
             this.vehiclesListView.TabIndex = 0;
             this.vehiclesListView.UseCompatibleStateImageBehavior = false;
             this.vehiclesListView.View = System.Windows.Forms.View.Details;
@@ -222,21 +222,22 @@ namespace Vehicles
             this.toolStripFilter.Text = "All";
             this.toolStripFilter.SelectedIndexChanged += new System.EventHandler(this.ToolStripFilter_SelectedIndexChanged);
             // 
-            // statusStrip1
+            // statusStrip
             // 
-            this.statusStrip1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.statusStrip.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.itemsToolStripStatusLabel});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 0);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(800, 22);
-            this.statusStrip1.TabIndex = 0;
+            this.statusStrip.Location = new System.Drawing.Point(0, 0);
+            this.statusStrip.Name = "statusStrip";
+            this.statusStrip.Size = new System.Drawing.Size(800, 22);
+            this.statusStrip.TabIndex = 0;
+            this.statusStrip.Visible = false;
             // 
             // itemsToolStripStatusLabel
             // 
             this.itemsToolStripStatusLabel.Name = "itemsToolStripStatusLabel";
-            this.itemsToolStripStatusLabel.Size = new System.Drawing.Size(106, 17);
-            this.itemsToolStripStatusLabel.Text = "Number of tems: 0";
+            this.itemsToolStripStatusLabel.Size = new System.Drawing.Size(109, 17);
+            this.itemsToolStripStatusLabel.Text = "Number of items: 0";
             // 
             // VehiclesForm
             // 
@@ -261,8 +262,8 @@ namespace Vehicles
             this.menuStrip.PerformLayout();
             this.toolStrip.ResumeLayout(false);
             this.toolStrip.PerformLayout();
-            this.statusStrip1.ResumeLayout(false);
-            this.statusStrip1.PerformLayout();
+            this.statusStrip.ResumeLayout(false);
+            this.statusStrip.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -285,7 +286,7 @@ namespace Vehicles
         private System.Windows.Forms.ToolStripButton deleteToolStripButton;
         private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem;
-        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.StatusStrip statusStrip;
         private System.Windows.Forms.ToolStripStatusLabel itemsToolStripStatusLabel;
     }
 }

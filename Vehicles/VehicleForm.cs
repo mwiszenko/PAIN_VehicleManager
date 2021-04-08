@@ -66,17 +66,14 @@ namespace Vehicles
                 {
                     case Types.Motorcycle:
                         typeSelectorControl.Type = Types.Motorcycle;
-                        typeSelectorControl.SetImage();
                         typeTextBox.Text = "Motorcycle";
                         break;
                     case Types.Car:
                         typeSelectorControl.Type = Types.Car;
-                        typeSelectorControl.SetImage();
                         typeTextBox.Text = "Car";
                         break;
                     case Types.Truck:
                         typeSelectorControl.Type = Types.Truck;
-                        typeSelectorControl.SetImage();
                         typeTextBox.Text = "Truck";
                         break;
                 }

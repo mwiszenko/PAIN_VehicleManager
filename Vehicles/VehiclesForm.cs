@@ -33,11 +33,13 @@ namespace Vehicles
         private void VehiclesForm_Activated(object sender, EventArgs e)
         {
             ToolStripManager.Merge(toolStrip, ((MainForm)MdiParent).toolStrip);
+            ToolStripManager.Merge(statusStrip, ((MainForm)MdiParent).statusStrip);
         }
 
         private void VehiclesForm_Deactivated(object sender, EventArgs e)
         {
             ToolStripManager.RevertMerge(((MainForm)MdiParent).toolStrip, toolStrip);
+            ToolStripManager.RevertMerge(((MainForm)MdiParent).statusStrip, statusStrip);
         }
 
         private void AddToolStripMenuItem_Click(object sender, EventArgs e)

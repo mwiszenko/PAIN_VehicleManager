@@ -54,9 +54,20 @@ namespace Vehicles
         [EditorAttribute(typeof(TypeSelectorEditor), typeof(UITypeEditor))]
         public enum Types { Motorcycle = 0, Car = 1, Truck = 2 };
 
+        private Types _type;
+
         public Types Type
         {
-            get; set;
+            get
+            {
+                return this._type;
+            }
+
+            set
+            {
+                _type = value;
+                SetImage();
+            }
         }
 
         public TypeSelectorControl()
