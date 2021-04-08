@@ -79,12 +79,12 @@ namespace Vehicles
 
         public override string ToString()
         {
-            return Type.ToString();
+            return _type.ToString();
         }
 
         public void TypeSelectorControl_Click(object sender, EventArgs e)
         {
-            switch(Type)
+            switch (Type)
             {
                 case Types.Motorcycle:
                     this.Image = Properties.Resources.car;
@@ -100,7 +100,7 @@ namespace Vehicles
                     break;
 
             }
-    }
+        }
 
         protected override void OnPaint(PaintEventArgs pe)
         {

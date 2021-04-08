@@ -198,7 +198,7 @@ namespace Vehicles
 
         private void ToolStripFilter_SelectedIndexChanged(object sender, EventArgs e)
         {
-            switch(toolStripFilter.Text)
+            switch (toolStripFilter.Text)
             {
                 case "All":
                     this.Filter = FilterOptions.ALL;
