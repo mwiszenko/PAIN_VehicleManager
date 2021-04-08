@@ -21,6 +21,11 @@ namespace Vehicles
 
         private void AddViewToolStripButton_Click(object sender, EventArgs e)
         {
+            AddNewVehiclesFormView();
+        }
+
+        private void AddNewVehiclesFormView()
+        {
             VehiclesForm vehiclesForm = new VehiclesForm(document)
             {
                 MdiParent = this
@@ -31,7 +36,7 @@ namespace Vehicles
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-
+            AddNewVehiclesFormView();
         }
 
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
