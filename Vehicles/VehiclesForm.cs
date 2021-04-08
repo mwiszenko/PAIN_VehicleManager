@@ -103,8 +103,14 @@ namespace Vehicles
                     {
                         vehiclesListView.Items.Remove(item);
                     }
+                    UpdateNumberOfItemsOnLabel();
                     return;
                 }
+            }
+
+            if (MaxVelocityFilter(vehicle))
+            {
+                AddItem(vehicle);
             }
         }
 
@@ -115,6 +121,7 @@ namespace Vehicles
                 if (item.Tag == vehicle)
                 {
                     vehiclesListView.Items.Remove(item);
+                    UpdateNumberOfItemsOnLabel();
                     return;
                 }
             }
@@ -155,6 +162,7 @@ namespace Vehicles
             viewItem.Tag = vehicle;
             UpdateItem(viewItem);
             vehiclesListView.Items.Add(viewItem);
+            UpdateNumberOfItemsOnLabel();
         }
 
         private void UpdateItem(ListViewItem item)
@@ -203,8 +211,13 @@ namespace Vehicles
                     this.Filter = FilterOptions.ALL;
                     break;
             }
-
             UpdateList();
+            UpdateNumberOfItemsOnLabel();
+        }
+
+        private void UpdateNumberOfItemsOnLabel()
+        {
+            itemsToolStripStatusLabel.Text = "Number of items: " + vehiclesListView.Items.Count;
         }
     }
 }
