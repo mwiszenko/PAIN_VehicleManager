@@ -114,5 +114,15 @@ namespace Vehicles
         {
             errorProvider.SetError(modelTextBox, "");
         }
+
+        private void modelLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void modelTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

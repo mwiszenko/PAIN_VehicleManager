@@ -41,10 +41,10 @@ namespace Vehicles
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip = new System.Windows.Forms.ToolStrip();
-            this.toolStripFilter = new System.Windows.Forms.ToolStripComboBox();
             this.addToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.editToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.deleteToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.toolStripFilter = new System.Windows.Forms.ToolStripComboBox();
             this.toolStripContainer.ContentPanel.SuspendLayout();
             this.toolStripContainer.TopToolStripPanel.SuspendLayout();
             this.toolStripContainer.SuspendLayout();
@@ -78,10 +78,12 @@ namespace Vehicles
             this.typeHeader,
             this.productionDateHeader,
             this.maxVelocityHeader});
+            this.vehiclesListView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.vehiclesListView.HideSelection = false;
             this.vehiclesListView.Location = new System.Drawing.Point(0, 0);
+            this.vehiclesListView.MultiSelect = false;
             this.vehiclesListView.Name = "vehiclesListView";
-            this.vehiclesListView.Size = new System.Drawing.Size(800, 385);
+            this.vehiclesListView.Size = new System.Drawing.Size(800, 450);
             this.vehiclesListView.TabIndex = 0;
             this.vehiclesListView.UseCompatibleStateImageBehavior = false;
             this.vehiclesListView.View = System.Windows.Forms.View.Details;
@@ -105,7 +107,7 @@ namespace Vehicles
             // maxVelocityHeader
             // 
             this.maxVelocityHeader.Text = "Max velocity";
-            this.maxVelocityHeader.Width = 574;
+            this.maxVelocityHeader.Width = 251;
             // 
             // menuStrip
             // 
@@ -163,20 +165,9 @@ namespace Vehicles
             this.toolStripFilter});
             this.toolStrip.Location = new System.Drawing.Point(3, 0);
             this.toolStrip.Name = "toolStrip";
-            this.toolStrip.Size = new System.Drawing.Size(265, 38);
+            this.toolStrip.Size = new System.Drawing.Size(234, 38);
             this.toolStrip.TabIndex = 0;
             this.toolStrip.Visible = false;
-            // 
-            // toolStripFilter
-            // 
-            this.toolStripFilter.Items.AddRange(new object[] {
-            "All",
-            "Over 100",
-            "Under 100"});
-            this.toolStripFilter.Name = "toolStripFilter";
-            this.toolStripFilter.Size = new System.Drawing.Size(121, 38);
-            this.toolStripFilter.Text = "All";
-            this.toolStripFilter.SelectedIndexChanged += new System.EventHandler(this.ToolStripFilter_SelectedIndexChanged);
             // 
             // addToolStripButton
             // 
@@ -212,6 +203,17 @@ namespace Vehicles
             this.deleteToolStripButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.deleteToolStripButton.ToolTipText = "Delete";
             this.deleteToolStripButton.Click += new System.EventHandler(this.DeleteToolStripMenuItem_Click);
+            // 
+            // toolStripFilter
+            // 
+            this.toolStripFilter.Items.AddRange(new object[] {
+            "All",
+            "Over 100",
+            "Under 100"});
+            this.toolStripFilter.Name = "toolStripFilter";
+            this.toolStripFilter.Size = new System.Drawing.Size(121, 38);
+            this.toolStripFilter.Text = "All";
+            this.toolStripFilter.SelectedIndexChanged += new System.EventHandler(this.ToolStripFilter_SelectedIndexChanged);
             // 
             // VehiclesForm
             // 
