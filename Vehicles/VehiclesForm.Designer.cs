@@ -81,7 +81,6 @@ namespace Vehicles
             this.vehiclesListView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.vehiclesListView.HideSelection = false;
             this.vehiclesListView.Location = new System.Drawing.Point(0, 0);
-            this.vehiclesListView.MultiSelect = false;
             this.vehiclesListView.Name = "vehiclesListView";
             this.vehiclesListView.Size = new System.Drawing.Size(800, 450);
             this.vehiclesListView.TabIndex = 0;

@@ -100,7 +100,6 @@
             this.modelTextBox.Name = "modelTextBox";
             this.modelTextBox.Size = new System.Drawing.Size(152, 20);
             this.modelTextBox.TabIndex = 4;
-            this.modelTextBox.TextChanged += new System.EventHandler(this.modelTextBox_TextChanged);
             this.modelTextBox.Validating += new System.ComponentModel.CancelEventHandler(this.ModelTextBox_Validating);
             this.modelTextBox.Validated += new System.EventHandler(this.ModelTextBox_Validated);
             // 

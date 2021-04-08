@@ -53,7 +53,9 @@ namespace Vehicles
 
         private void EditToolStripMenuItem_Click(object sender, EventArgs e)
         {
-                Vehicle vehicle = (Vehicle) vehiclesListView.SelectedItems[0].Tag;
+            foreach (ListViewItem vehicleItem in vehiclesListView.SelectedItems)
+            {
+                Vehicle vehicle = (Vehicle)vehicleItem.Tag;
                 VehicleForm vehicleForm = new VehicleForm(vehicle);
                 if (vehicleForm.ShowDialog() == DialogResult.OK)
                 {
@@ -64,14 +66,18 @@ namespace Vehicles
 
                     Document.UpdateVehicle(vehicle);
                 }
+            }
         }
 
         private void DeleteToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Are you sure?", "Delete", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                Vehicle vehicle = (Vehicle) vehiclesListView.SelectedItems[0].Tag;
-                Document.DeleteVehicle(vehicle);
+                foreach (ListViewItem vehicleItem in vehiclesListView.SelectedItems)
+                {
+                    Vehicle vehicle = (Vehicle)vehicleItem.Tag;
+                    Document.DeleteVehicle(vehicle);
+                }
             }
         }
 
@@ -85,7 +91,7 @@ namespace Vehicles
 
         private void Document_UpdateVehicleEvent(Vehicle vehicle)
         {
-            foreach (ListViewItem item in vehiclesListView.SelectedItems)
+            foreach (ListViewItem item in vehiclesListView.Items)
             {
                 if (item.Tag == vehicle)
                 {
