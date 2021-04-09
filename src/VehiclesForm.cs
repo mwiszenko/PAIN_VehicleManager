@@ -180,20 +180,7 @@ namespace Vehicles
 
         private void VehiclesListView_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (vehiclesListView.SelectedItems.Count == 0)
-            {
-                deleteToolStripMenuItem.Enabled = false;
-                editToolStripMenuItem.Enabled = false;
-                deleteToolStripButton.Enabled = false;
-                editToolStripButton.Enabled = false;
-            }
-            else
-            {
-                deleteToolStripMenuItem.Enabled = true;
-                editToolStripMenuItem.Enabled = true;
-                deleteToolStripButton.Enabled = true;
-                editToolStripButton.Enabled = true;
-            }
+            UpdateEditAndDeleteAvailability();
         }
 
         private void ToolStripFilter_SelectedIndexChanged(object sender, EventArgs e)
@@ -215,11 +202,30 @@ namespace Vehicles
             }
             UpdateList();
             UpdateNumberOfItemsOnLabel();
+            UpdateEditAndDeleteAvailability();
         }
 
         private void UpdateNumberOfItemsOnLabel()
         {
             itemsToolStripStatusLabel.Text = "Number of items: " + vehiclesListView.Items.Count;
+        }
+
+        private void UpdateEditAndDeleteAvailability()
+        {
+            if (vehiclesListView.SelectedItems.Count == 0)
+            {
+                deleteToolStripMenuItem.Enabled = false;
+                editToolStripMenuItem.Enabled = false;
+                deleteToolStripButton.Enabled = false;
+                editToolStripButton.Enabled = false;
+            }
+            else
+            {
+                deleteToolStripMenuItem.Enabled = true;
+                editToolStripMenuItem.Enabled = true;
+                deleteToolStripButton.Enabled = true;
+                editToolStripButton.Enabled = true;
+            }
         }
     }
 }
