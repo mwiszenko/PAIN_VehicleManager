@@ -1,4 +1,4 @@
-﻿# Vehicles Manager
+﻿# Vehicle Manager
 
 Windows Forms application allowing users to manage a list of vehicles.
 
