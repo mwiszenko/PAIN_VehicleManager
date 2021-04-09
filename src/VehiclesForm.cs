@@ -203,10 +203,10 @@ namespace Vehicles
                 case "All":
                     this.Filter = FilterOptions.ALL;
                     break;
-                case "Over 100":
+                case "Over 100 km/h":
                     this.Filter = FilterOptions.OVER_100;
                     break;
-                case "Under 100":
+                case "Below 100 km/h":
                     this.Filter = FilterOptions.UNDER_100;
                     break;
                 default:

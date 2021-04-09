@@ -66,7 +66,7 @@ namespace Vehicles
             // toolStripContainer.ContentPanel
             // 
             this.toolStripContainer.ContentPanel.Controls.Add(this.vehiclesListView);
-            this.toolStripContainer.ContentPanel.Size = new System.Drawing.Size(583, 314);
+            this.toolStripContainer.ContentPanel.Size = new System.Drawing.Size(583, 276);
             this.toolStripContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.toolStripContainer.Location = new System.Drawing.Point(0, 0);
             this.toolStripContainer.Name = "toolStripContainer";
@@ -108,7 +108,7 @@ namespace Vehicles
             this.vehiclesListView.HideSelection = false;
             this.vehiclesListView.Location = new System.Drawing.Point(0, 0);
             this.vehiclesListView.Name = "vehiclesListView";
-            this.vehiclesListView.Size = new System.Drawing.Size(583, 314);
+            this.vehiclesListView.Size = new System.Drawing.Size(583, 276);
             this.vehiclesListView.TabIndex = 0;
             this.vehiclesListView.UseCompatibleStateImageBehavior = false;
             this.vehiclesListView.View = System.Windows.Forms.View.Details;
@@ -190,7 +190,7 @@ namespace Vehicles
             this.toolStripFilter});
             this.toolStrip.Location = new System.Drawing.Point(3, 0);
             this.toolStrip.Name = "toolStrip";
-            this.toolStrip.Size = new System.Drawing.Size(234, 38);
+            this.toolStrip.Size = new System.Drawing.Size(267, 38);
             this.toolStrip.TabIndex = 0;
             this.toolStrip.Visible = false;
             // 
@@ -233,8 +233,8 @@ namespace Vehicles
             // 
             this.toolStripFilter.Items.AddRange(new object[] {
             "All",
-            "Over 100",
-            "Under 100"});
+            "Over 100 km/h",
+            "Below 100 km/h"});
             this.toolStripFilter.Name = "toolStripFilter";
             this.toolStripFilter.Size = new System.Drawing.Size(121, 38);
             this.toolStripFilter.Text = "All";
