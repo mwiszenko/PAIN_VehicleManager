@@ -46,6 +46,7 @@
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.typeSelectorControl = new Vehicles.TypeSelectorControl();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -55,6 +56,7 @@
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.typeSelectorControl)).BeginInit();
+            this.tableLayoutPanel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // productionDateTimePicker
@@ -63,7 +65,7 @@
             this.productionDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.productionDateTimePicker.Location = new System.Drawing.Point(91, 81);
             this.productionDateTimePicker.Name = "productionDateTimePicker";
-            this.productionDateTimePicker.Size = new System.Drawing.Size(152, 20);
+            this.productionDateTimePicker.Size = new System.Drawing.Size(203, 20);
             this.productionDateTimePicker.TabIndex = 7;
             // 
             // productionDateLabel
@@ -98,7 +100,7 @@
             this.modelTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.modelTextBox.Location = new System.Drawing.Point(91, 3);
             this.modelTextBox.Name = "modelTextBox";
-            this.modelTextBox.Size = new System.Drawing.Size(152, 20);
+            this.modelTextBox.Size = new System.Drawing.Size(203, 20);
             this.modelTextBox.TabIndex = 4;
             this.modelTextBox.Validating += new System.ComponentModel.CancelEventHandler(this.ModelTextBox_Validating);
             this.modelTextBox.Validated += new System.EventHandler(this.ModelTextBox_Validated);
@@ -108,14 +110,14 @@
             this.maxVelocityTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.maxVelocityTextBox.Location = new System.Drawing.Point(91, 55);
             this.maxVelocityTextBox.Name = "maxVelocityTextBox";
-            this.maxVelocityTextBox.Size = new System.Drawing.Size(152, 20);
+            this.maxVelocityTextBox.Size = new System.Drawing.Size(203, 20);
             this.maxVelocityTextBox.TabIndex = 6;
             this.maxVelocityTextBox.Validating += new System.ComponentModel.CancelEventHandler(this.MaxVelocityTextBox_Validating);
             this.maxVelocityTextBox.Validated += new System.EventHandler(this.MaxVelocityTextBox_Validated);
             // 
             // okButton
             // 
-            this.okButton.Location = new System.Drawing.Point(24, 3);
+            this.okButton.Location = new System.Drawing.Point(45, 3);
             this.okButton.Name = "okButton";
             this.okButton.Size = new System.Drawing.Size(80, 20);
             this.okButton.TabIndex = 0;
@@ -125,7 +127,7 @@
             // 
             // cancelButton
             // 
-            this.cancelButton.Location = new System.Drawing.Point(131, 3);
+            this.cancelButton.Location = new System.Drawing.Point(173, 3);
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Size = new System.Drawing.Size(80, 20);
             this.cancelButton.TabIndex = 1;
@@ -139,7 +141,7 @@
             this.typeTextBox.Location = new System.Drawing.Point(91, 29);
             this.typeTextBox.Name = "typeTextBox";
             this.typeTextBox.ReadOnly = true;
-            this.typeTextBox.Size = new System.Drawing.Size(152, 20);
+            this.typeTextBox.Size = new System.Drawing.Size(203, 20);
             this.typeTextBox.TabIndex = 5;
             this.typeTextBox.Text = "Motorcycle";
             // 
@@ -168,9 +170,9 @@
             // 
             // splitContainer1.Panel2
             // 
-            this.splitContainer1.Panel2.Controls.Add(this.typeSelectorControl);
-            this.splitContainer1.Size = new System.Drawing.Size(758, 467);
-            this.splitContainer1.SplitterDistance = 252;
+            this.splitContainer1.Panel2.Controls.Add(this.tableLayoutPanel4);
+            this.splitContainer1.Size = new System.Drawing.Size(594, 225);
+            this.splitContainer1.SplitterDistance = 325;
             this.splitContainer1.TabIndex = 0;
             // 
             // tableLayoutPanel1
@@ -185,15 +187,15 @@
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(252, 467);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(325, 225);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // tableLayoutPanel2
             // 
-            this.tableLayoutPanel2.ColumnCount = 2;
+            this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Controls.Add(this.modelLabel, 0, 0);
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 90.90909F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
             this.tableLayoutPanel2.Controls.Add(this.typeTextBox, 1, 1);
             this.tableLayoutPanel2.Controls.Add(this.typeLabel, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.modelTextBox, 1, 0);
@@ -201,6 +203,7 @@
             this.tableLayoutPanel2.Controls.Add(this.productionDateLabel, 0, 3);
             this.tableLayoutPanel2.Controls.Add(this.maxVelocityTextBox, 1, 2);
             this.tableLayoutPanel2.Controls.Add(this.productionDateTimePicker, 1, 3);
+            this.tableLayoutPanel2.Controls.Add(this.modelLabel, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -210,7 +213,7 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(246, 429);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(319, 187);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // tableLayoutPanel3
@@ -225,11 +228,11 @@
             this.tableLayoutPanel3.Controls.Add(this.okButton, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.cancelButton, 3, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 438);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 196);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(246, 26);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(319, 26);
             this.tableLayoutPanel3.TabIndex = 1;
             // 
             // typeSelectorControl
@@ -237,20 +240,37 @@
             this.typeSelectorControl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.typeSelectorControl.Image = ((System.Drawing.Image)(resources.GetObject("typeSelectorControl.Image")));
             this.typeSelectorControl.InitialImage = global::Vehicles.Properties.Resources.car;
-            this.typeSelectorControl.Location = new System.Drawing.Point(0, 0);
+            this.typeSelectorControl.Location = new System.Drawing.Point(29, 25);
             this.typeSelectorControl.Name = "typeSelectorControl";
-            this.typeSelectorControl.Size = new System.Drawing.Size(502, 467);
+            this.typeSelectorControl.Size = new System.Drawing.Size(206, 174);
             this.typeSelectorControl.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.typeSelectorControl.TabIndex = 0;
             this.typeSelectorControl.TabStop = false;
             this.typeSelectorControl.Type = Vehicles.TypeSelectorControl.Types.Motorcycle;
             this.typeSelectorControl.Click += new System.EventHandler(this.TypeSelectorControl_Click);
             // 
+            // tableLayoutPanel4
+            // 
+            this.tableLayoutPanel4.ColumnCount = 3;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel4.Controls.Add(this.typeSelectorControl, 1, 1);
+            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 3;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(265, 225);
+            this.tableLayoutPanel4.TabIndex = 0;
+            // 
             // VehicleForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(758, 467);
+            this.ClientSize = new System.Drawing.Size(594, 225);
             this.Controls.Add(this.splitContainer1);
             this.Name = "VehicleForm";
             this.Text = "Vehicle";
@@ -266,6 +286,7 @@
             this.tableLayoutPanel2.PerformLayout();
             this.tableLayoutPanel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.typeSelectorControl)).EndInit();
+            this.tableLayoutPanel4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -288,5 +309,6 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
     }
 }
