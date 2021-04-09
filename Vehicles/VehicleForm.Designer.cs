@@ -41,22 +41,22 @@
             this.typeTextBox = new System.Windows.Forms.TextBox();
             this.typeLabel = new System.Windows.Forms.Label();
             this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
-            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.splitContainer = new System.Windows.Forms.SplitContainer();
+            this.tableLayoutPanelLeft = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanelLeftTop = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanelLeftBottom = new System.Windows.Forms.TableLayoutPanel();
             this.typeSelectorControl = new Vehicles.TypeSelectorControl();
-            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanelRight = new System.Windows.Forms.TableLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
-            this.splitContainer1.Panel1.SuspendLayout();
-            this.splitContainer1.Panel2.SuspendLayout();
-            this.splitContainer1.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
-            this.tableLayoutPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer)).BeginInit();
+            this.splitContainer.Panel1.SuspendLayout();
+            this.splitContainer.Panel2.SuspendLayout();
+            this.splitContainer.SuspendLayout();
+            this.tableLayoutPanelLeft.SuspendLayout();
+            this.tableLayoutPanelLeftTop.SuspendLayout();
+            this.tableLayoutPanelLeftBottom.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.typeSelectorControl)).BeginInit();
-            this.tableLayoutPanel4.SuspendLayout();
+            this.tableLayoutPanelRight.SuspendLayout();
             this.SuspendLayout();
             // 
             // productionDateTimePicker
@@ -158,82 +158,82 @@
             // 
             this.errorProvider.ContainerControl = this;
             // 
-            // splitContainer1
+            // splitContainer
             // 
-            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer1.Name = "splitContainer1";
+            this.splitContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer.Name = "splitContainer";
             // 
-            // splitContainer1.Panel1
+            // splitContainer.Panel1
             // 
-            this.splitContainer1.Panel1.Controls.Add(this.tableLayoutPanel1);
+            this.splitContainer.Panel1.Controls.Add(this.tableLayoutPanelLeft);
             // 
-            // splitContainer1.Panel2
+            // splitContainer.Panel2
             // 
-            this.splitContainer1.Panel2.Controls.Add(this.tableLayoutPanel4);
-            this.splitContainer1.Size = new System.Drawing.Size(594, 225);
-            this.splitContainer1.SplitterDistance = 325;
-            this.splitContainer1.TabIndex = 0;
+            this.splitContainer.Panel2.Controls.Add(this.tableLayoutPanelRight);
+            this.splitContainer.Size = new System.Drawing.Size(594, 225);
+            this.splitContainer.SplitterDistance = 325;
+            this.splitContainer.TabIndex = 0;
             // 
-            // tableLayoutPanel1
+            // tableLayoutPanelLeft
             // 
-            this.tableLayoutPanel1.ColumnCount = 1;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 0, 1);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(325, 225);
-            this.tableLayoutPanel1.TabIndex = 0;
+            this.tableLayoutPanelLeft.ColumnCount = 1;
+            this.tableLayoutPanelLeft.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanelLeft.Controls.Add(this.tableLayoutPanelLeftTop, 0, 0);
+            this.tableLayoutPanelLeft.Controls.Add(this.tableLayoutPanelLeftBottom, 0, 1);
+            this.tableLayoutPanelLeft.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanelLeft.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanelLeft.Name = "tableLayoutPanelLeft";
+            this.tableLayoutPanelLeft.RowCount = 2;
+            this.tableLayoutPanelLeft.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanelLeft.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanelLeft.Size = new System.Drawing.Size(325, 225);
+            this.tableLayoutPanelLeft.TabIndex = 0;
             // 
-            // tableLayoutPanel2
+            // tableLayoutPanelLeftTop
             // 
-            this.tableLayoutPanel2.ColumnCount = 3;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 90.90909F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
-            this.tableLayoutPanel2.Controls.Add(this.typeTextBox, 1, 1);
-            this.tableLayoutPanel2.Controls.Add(this.typeLabel, 0, 1);
-            this.tableLayoutPanel2.Controls.Add(this.modelTextBox, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.maxVelocityLabel, 0, 2);
-            this.tableLayoutPanel2.Controls.Add(this.productionDateLabel, 0, 3);
-            this.tableLayoutPanel2.Controls.Add(this.maxVelocityTextBox, 1, 2);
-            this.tableLayoutPanel2.Controls.Add(this.productionDateTimePicker, 1, 3);
-            this.tableLayoutPanel2.Controls.Add(this.modelLabel, 0, 0);
-            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 5;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(319, 187);
-            this.tableLayoutPanel2.TabIndex = 0;
+            this.tableLayoutPanelLeftTop.ColumnCount = 3;
+            this.tableLayoutPanelLeftTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanelLeftTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 90.90909F));
+            this.tableLayoutPanelLeftTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.090909F));
+            this.tableLayoutPanelLeftTop.Controls.Add(this.typeTextBox, 1, 1);
+            this.tableLayoutPanelLeftTop.Controls.Add(this.typeLabel, 0, 1);
+            this.tableLayoutPanelLeftTop.Controls.Add(this.modelTextBox, 1, 0);
+            this.tableLayoutPanelLeftTop.Controls.Add(this.maxVelocityLabel, 0, 2);
+            this.tableLayoutPanelLeftTop.Controls.Add(this.productionDateLabel, 0, 3);
+            this.tableLayoutPanelLeftTop.Controls.Add(this.maxVelocityTextBox, 1, 2);
+            this.tableLayoutPanelLeftTop.Controls.Add(this.productionDateTimePicker, 1, 3);
+            this.tableLayoutPanelLeftTop.Controls.Add(this.modelLabel, 0, 0);
+            this.tableLayoutPanelLeftTop.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanelLeftTop.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanelLeftTop.Name = "tableLayoutPanelLeftTop";
+            this.tableLayoutPanelLeftTop.RowCount = 5;
+            this.tableLayoutPanelLeftTop.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanelLeftTop.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanelLeftTop.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanelLeftTop.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanelLeftTop.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanelLeftTop.Size = new System.Drawing.Size(319, 187);
+            this.tableLayoutPanelLeftTop.TabIndex = 0;
             // 
-            // tableLayoutPanel3
+            // tableLayoutPanelLeftBottom
             // 
-            this.tableLayoutPanel3.AutoSize = true;
-            this.tableLayoutPanel3.ColumnCount = 5;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 28.57143F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 28.57143F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 42.85714F));
-            this.tableLayoutPanel3.Controls.Add(this.okButton, 1, 0);
-            this.tableLayoutPanel3.Controls.Add(this.cancelButton, 3, 0);
-            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 196);
-            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 1;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(319, 26);
-            this.tableLayoutPanel3.TabIndex = 1;
+            this.tableLayoutPanelLeftBottom.AutoSize = true;
+            this.tableLayoutPanelLeftBottom.ColumnCount = 5;
+            this.tableLayoutPanelLeftBottom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 28.57143F));
+            this.tableLayoutPanelLeftBottom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanelLeftBottom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 28.57143F));
+            this.tableLayoutPanelLeftBottom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanelLeftBottom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 42.85714F));
+            this.tableLayoutPanelLeftBottom.Controls.Add(this.okButton, 1, 0);
+            this.tableLayoutPanelLeftBottom.Controls.Add(this.cancelButton, 3, 0);
+            this.tableLayoutPanelLeftBottom.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanelLeftBottom.Location = new System.Drawing.Point(3, 196);
+            this.tableLayoutPanelLeftBottom.Name = "tableLayoutPanelLeftBottom";
+            this.tableLayoutPanelLeftBottom.RowCount = 1;
+            this.tableLayoutPanelLeftBottom.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanelLeftBottom.Size = new System.Drawing.Size(319, 26);
+            this.tableLayoutPanelLeftBottom.TabIndex = 1;
             // 
             // typeSelectorControl
             // 
@@ -249,44 +249,44 @@
             this.typeSelectorControl.Type = Vehicles.TypeSelectorControl.Types.Motorcycle;
             this.typeSelectorControl.Click += new System.EventHandler(this.TypeSelectorControl_Click);
             // 
-            // tableLayoutPanel4
+            // tableLayoutPanelRight
             // 
-            this.tableLayoutPanel4.ColumnCount = 3;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel4.Controls.Add(this.typeSelectorControl, 1, 1);
-            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.RowCount = 3;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(265, 225);
-            this.tableLayoutPanel4.TabIndex = 0;
+            this.tableLayoutPanelRight.ColumnCount = 3;
+            this.tableLayoutPanelRight.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanelRight.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
+            this.tableLayoutPanelRight.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanelRight.Controls.Add(this.typeSelectorControl, 1, 1);
+            this.tableLayoutPanelRight.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanelRight.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanelRight.Name = "tableLayoutPanelRight";
+            this.tableLayoutPanelRight.RowCount = 3;
+            this.tableLayoutPanelRight.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanelRight.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
+            this.tableLayoutPanelRight.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanelRight.Size = new System.Drawing.Size(265, 225);
+            this.tableLayoutPanelRight.TabIndex = 0;
             // 
             // VehicleForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(594, 225);
-            this.Controls.Add(this.splitContainer1);
+            this.Controls.Add(this.splitContainer);
             this.Name = "VehicleForm";
             this.Text = "Vehicle";
             this.Load += new System.EventHandler(this.VehicleForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
-            this.splitContainer1.Panel1.ResumeLayout(false);
-            this.splitContainer1.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
-            this.splitContainer1.ResumeLayout(false);
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
-            this.tableLayoutPanel2.ResumeLayout(false);
-            this.tableLayoutPanel2.PerformLayout();
-            this.tableLayoutPanel3.ResumeLayout(false);
+            this.splitContainer.Panel1.ResumeLayout(false);
+            this.splitContainer.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer)).EndInit();
+            this.splitContainer.ResumeLayout(false);
+            this.tableLayoutPanelLeft.ResumeLayout(false);
+            this.tableLayoutPanelLeft.PerformLayout();
+            this.tableLayoutPanelLeftTop.ResumeLayout(false);
+            this.tableLayoutPanelLeftTop.PerformLayout();
+            this.tableLayoutPanelLeftBottom.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.typeSelectorControl)).EndInit();
-            this.tableLayoutPanel4.ResumeLayout(false);
+            this.tableLayoutPanelRight.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -305,10 +305,10 @@
         private System.Windows.Forms.Label typeLabel;
         private System.Windows.Forms.ErrorProvider errorProvider;
         private TypeSelectorControl typeSelectorControl;
-        private System.Windows.Forms.SplitContainer splitContainer1;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
+        private System.Windows.Forms.SplitContainer splitContainer;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanelLeft;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanelLeftTop;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanelLeftBottom;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanelRight;
     }
 }
