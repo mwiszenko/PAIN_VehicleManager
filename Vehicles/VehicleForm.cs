@@ -82,14 +82,17 @@ namespace Vehicles
 
         private void MaxVelocityTextBox_Validating(object sender, CancelEventArgs e)
         {
-            try
+            if (cancelButton.Focused == false)
             {
-                double velocity = double.Parse(maxVelocityTextBox.Text);
-            }
-            catch (Exception exception)
-            {
-                e.Cancel = true;
-                errorProvider.SetError(maxVelocityTextBox, exception.Message);
+                try
+                {
+                    double velocity = double.Parse(maxVelocityTextBox.Text);
+                }
+                catch (Exception exception)
+                {
+                    e.Cancel = true;
+                    errorProvider.SetError(maxVelocityTextBox, exception.Message);
+                }
             }
         }
 
@@ -100,7 +103,7 @@ namespace Vehicles
 
         private void ModelTextBox_Validating(object sender, CancelEventArgs e)
         {
-            if (modelTextBox.Text == "")
+            if (modelTextBox.Text == "" && cancelButton.Focused == false)
             {
                 e.Cancel = true;
                 errorProvider.SetError(modelTextBox, "Field cannot be empty!");
