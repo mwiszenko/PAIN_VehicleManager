@@ -275,6 +275,7 @@
             this.Name = "VehicleForm";
             this.Text = "Vehicle";
             this.Load += new System.EventHandler(this.VehicleForm_Load);
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
             this.splitContainer.Panel1.ResumeLayout(false);
             this.splitContainer.Panel2.ResumeLayout(false);
