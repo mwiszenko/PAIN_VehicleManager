@@ -1,4 +1,4 @@
-# Vehicles Manager
+# Vehicle Manager
 
 MDI Windows Forms application allowing users to manage a list of vehicles.
 
