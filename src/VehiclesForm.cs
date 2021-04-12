@@ -95,16 +95,12 @@ namespace Vehicles
         {
             foreach (ListViewItem item in vehiclesListView.Items)
             {
-                if (item.Tag == vehicle)
+                if (ReferenceEquals(item.Tag, vehicle))
                 {
-                    item.SubItems[0].Text = vehicle.Model;
-                    item.SubItems[1].Text = vehicle.Type.ToString();
-                    item.SubItems[2].Text = vehicle.ProductionDate.ToShortDateString();
-                    item.SubItems[3].Text = vehicle.MaxVelocity.ToString();
                     if (!MaxVelocityFilter(vehicle))
-                    {
                         vehiclesListView.Items.Remove(item);
-                    }
+                    else
+                        UpdateItem(item);
                     UpdateNumberOfItemsOnLabel();
                     return;
                 }

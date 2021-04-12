@@ -45,8 +45,8 @@
             this.tableLayoutPanelLeft = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanelLeftTop = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanelLeftBottom = new System.Windows.Forms.TableLayoutPanel();
-            this.typeSelectorControl = new Vehicles.TypeSelectorControl();
             this.tableLayoutPanelRight = new System.Windows.Forms.TableLayoutPanel();
+            this.typeSelectorControl = new Vehicles.TypeSelectorControl();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer)).BeginInit();
             this.splitContainer.Panel1.SuspendLayout();
@@ -55,8 +55,8 @@
             this.tableLayoutPanelLeft.SuspendLayout();
             this.tableLayoutPanelLeftTop.SuspendLayout();
             this.tableLayoutPanelLeftBottom.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.typeSelectorControl)).BeginInit();
             this.tableLayoutPanelRight.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.typeSelectorControl)).BeginInit();
             this.SuspendLayout();
             // 
             // productionDateTimePicker
@@ -235,20 +235,6 @@
             this.tableLayoutPanelLeftBottom.Size = new System.Drawing.Size(319, 26);
             this.tableLayoutPanelLeftBottom.TabIndex = 1;
             // 
-            // typeSelectorControl
-            // 
-            this.typeSelectorControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.typeSelectorControl.Image = ((System.Drawing.Image)(resources.GetObject("typeSelectorControl.Image")));
-            this.typeSelectorControl.InitialImage = global::Vehicles.Properties.Resources.car;
-            this.typeSelectorControl.Location = new System.Drawing.Point(29, 25);
-            this.typeSelectorControl.Name = "typeSelectorControl";
-            this.typeSelectorControl.Size = new System.Drawing.Size(206, 174);
-            this.typeSelectorControl.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.typeSelectorControl.TabIndex = 0;
-            this.typeSelectorControl.TabStop = false;
-            this.typeSelectorControl.Type = Vehicles.TypeSelectorControl.Types.Motorcycle;
-            this.typeSelectorControl.Click += new System.EventHandler(this.TypeSelectorControl_Click);
-            // 
             // tableLayoutPanelRight
             // 
             this.tableLayoutPanelRight.ColumnCount = 3;
@@ -266,6 +252,20 @@
             this.tableLayoutPanelRight.Size = new System.Drawing.Size(265, 225);
             this.tableLayoutPanelRight.TabIndex = 0;
             // 
+            // typeSelectorControl
+            // 
+            this.typeSelectorControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.typeSelectorControl.Image = ((System.Drawing.Image)(resources.GetObject("typeSelectorControl.Image")));
+            this.typeSelectorControl.InitialImage = global::Vehicles.Properties.Resources.car;
+            this.typeSelectorControl.Location = new System.Drawing.Point(29, 25);
+            this.typeSelectorControl.Name = "typeSelectorControl";
+            this.typeSelectorControl.Size = new System.Drawing.Size(206, 174);
+            this.typeSelectorControl.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.typeSelectorControl.TabIndex = 0;
+            this.typeSelectorControl.TabStop = false;
+            this.typeSelectorControl.Type = Vehicles.TypeSelectorControl.Types.Truck;
+            this.typeSelectorControl.Click += new System.EventHandler(this.TypeSelectorControl_Click);
+            // 
             // VehicleForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -273,9 +273,9 @@
             this.ClientSize = new System.Drawing.Size(594, 225);
             this.Controls.Add(this.splitContainer);
             this.Name = "VehicleForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Vehicle";
             this.Load += new System.EventHandler(this.VehicleForm_Load);
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
             this.splitContainer.Panel1.ResumeLayout(false);
             this.splitContainer.Panel2.ResumeLayout(false);
@@ -286,8 +286,8 @@
             this.tableLayoutPanelLeftTop.ResumeLayout(false);
             this.tableLayoutPanelLeftTop.PerformLayout();
             this.tableLayoutPanelLeftBottom.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.typeSelectorControl)).EndInit();
             this.tableLayoutPanelRight.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.typeSelectorControl)).EndInit();
             this.ResumeLayout(false);
 
         }

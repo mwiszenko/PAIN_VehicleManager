@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace Vehicles
 {
-    public class TypeSelectorEditor : System.Drawing.Design.UITypeEditor
+    public class TypeSelectorEditor : UITypeEditor
     {
         public TypeSelectorEditor()
         {
@@ -33,6 +33,7 @@ namespace Vehicles
             if (edSvc != null)
             {
                 TypeSelectorControl typeControl = new TypeSelectorControl();
+                typeControl.Type = (TypeSelectorControl.Types) value;
                 edSvc.DropDownControl(typeControl);
                 return typeControl.Type;
             }
@@ -50,12 +51,13 @@ namespace Vehicles
     [ToolboxBitmap(typeof(PictureBox))]
     public class TypeSelectorControl : PictureBox
     {
-        [BrowsableAttribute(true)]
-        [EditorAttribute(typeof(TypeSelectorEditor), typeof(UITypeEditor))]
+
         public enum Types { Motorcycle = 0, Car = 1, Truck = 2 };
 
         private Types _type;
 
+        [BrowsableAttribute(true)]
+        [EditorAttribute(typeof(TypeSelectorEditor), typeof(UITypeEditor))]
         public Types Type
         {
             get
