@@ -254,16 +254,17 @@
             // 
             // typeSelectorControl
             // 
+            this.typeSelectorControl.BackColor = System.Drawing.SystemColors.Control;
             this.typeSelectorControl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.typeSelectorControl.Image = ((System.Drawing.Image)(resources.GetObject("typeSelectorControl.Image")));
-            this.typeSelectorControl.InitialImage = global::Vehicles.Properties.Resources.car;
+            this.typeSelectorControl.InitialImage = global::Vehicles.Properties.Resources.motorcycle;
             this.typeSelectorControl.Location = new System.Drawing.Point(29, 25);
             this.typeSelectorControl.Name = "typeSelectorControl";
             this.typeSelectorControl.Size = new System.Drawing.Size(206, 174);
             this.typeSelectorControl.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.typeSelectorControl.TabIndex = 0;
             this.typeSelectorControl.TabStop = false;
-            this.typeSelectorControl.Type = Vehicles.TypeSelectorControl.Types.Truck;
+            this.typeSelectorControl.Type = Vehicles.TypeSelectorControl.Types.Motorcycle;
             this.typeSelectorControl.Click += new System.EventHandler(this.TypeSelectorControl_Click);
             // 
             // VehicleForm

@@ -13,22 +13,13 @@ namespace Vehicles
 {
     public class TypeSelectorEditor : UITypeEditor
     {
-        public TypeSelectorEditor()
-        {
-        }
-
-        // Indicates whether the UITypeEditor provides a form-based (modal) dialog, 
-        // drop down dialog, or no UI outside of the properties window.
         public override UITypeEditorEditStyle GetEditStyle(ITypeDescriptorContext context)
         {
             return UITypeEditorEditStyle.DropDown;
         }
 
-        // Displays the UI for value selection.
         public override object EditValue(ITypeDescriptorContext context, IServiceProvider provider, object value)
         {
-            // Uses the IWindowsFormsEditorService to display a 
-            // drop-down UI in the Properties window.
             IWindowsFormsEditorService edSvc = (IWindowsFormsEditorService)provider.GetService(typeof(IWindowsFormsEditorService));
             if (edSvc != null)
             {
@@ -40,8 +31,6 @@ namespace Vehicles
             return value;
         }
 
-        // Indicates whether the UITypeEditor supports painting a 
-        // representation of a property's value.
         public override bool GetPaintValueSupported(ITypeDescriptorContext context)
         {
             return true;
@@ -56,6 +45,7 @@ namespace Vehicles
 
         private Types _type;
 
+        [Category("Type")]
         [BrowsableAttribute(true)]
         [EditorAttribute(typeof(TypeSelectorEditor), typeof(UITypeEditor))]
         public Types Type
@@ -74,6 +64,8 @@ namespace Vehicles
 
         public TypeSelectorControl()
         {
+            this.Size = new Size (64, 64);
+            this.SizeMode = PictureBoxSizeMode.Zoom;
             Type = Types.Motorcycle;
             Image = Properties.Resources.motorcycle;
             Click += TypeSelectorControl_Click;
