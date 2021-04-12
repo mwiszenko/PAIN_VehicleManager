@@ -23,12 +23,6 @@ namespace Vehicles
 
         public void UpdateVehicle(Vehicle vehicleToUpdate)
         {
-            Vehicle vehicle = vehicles.FirstOrDefault(v => v == vehicleToUpdate);
-            vehicle.Model = vehicleToUpdate.Model;
-            vehicle.Type = vehicleToUpdate.Type;
-            vehicle.ProductionDate = vehicleToUpdate.ProductionDate;
-            vehicle.MaxVelocity = vehicleToUpdate.MaxVelocity;
-
             UpdateVehicleEvent?.Invoke(vehicleToUpdate);
         }
 
