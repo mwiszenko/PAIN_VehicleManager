@@ -106,7 +106,6 @@ namespace Vehicles
             this.Name = "MainForm";
             this.Text = "Vehicle Manager";
             this.Load += new System.EventHandler(this.MainForm_Load);
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();
             this.toolStrip.ResumeLayout(false);
